@@ -16,7 +16,8 @@ origin: https://github.com/mmtrt/WINE_AppImage
 </p>
 
 ## Info
- * This AppImage includes i386 GPU drivers. If it still doesnt work then don't get angry at me.
+ * Now WINE AppImages are built with wow64 enabled WINE builds.
+ * GE-Proton AppImage does not have wow64 enabled atm.
 
 ## Get Started
 
@@ -58,9 +59,14 @@ cd squashfs-root
 git clone 'https://github.com/mmtrt/WINE_AppImage.git'
 ```
 
-#### > Download appimage-builder and unpack
+#### > Download appimage-builder and unpack (AppRun v2)
 ```
 cd WINE_AppImage ; wget -q 'https://github.com/AppImageCrafters/appimage-builder/releases/download/v1.0.3/appimage-builder-1.0.3-x86_64.AppImage' ; chmod +x 'appimage-builder-1.0.3-x86_64.AppImage' ; ./appimage-builder-1.0.3-x86_64.AppImage --appimage-extract
+```
+#### > Download appimage-builder continuous build and unpack (AppRun v3)
+> NOTE: use this step for only WINE 9 and above AppImage recipe. below mentioned version may change in future.
+```
+cd WINE_AppImage ; wget -q 'https://github.com/AppImageCrafters/appimage-builder/releases/download/Continuous/appimage-builder-1.1.1.dev32+g2709a3b-x86_64.AppImage' ; chmod +x 'appimage-builder-1.1.1.dev32+g2709a3b-x86_64.AppImage' ; ./appimage-builder-1.1.1.dev32+g2709a3b-x86_64.AppImage --appimage-extract
 ```
 
 #### > Modify appimage-builder
